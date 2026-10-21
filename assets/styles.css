@@ -108,7 +108,7 @@ img{max-width:100%;display:block}
 .beyond{background:var(--sage);padding:72px 0 78px}
 .beyond-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
 .beyond-grid h2{font:400 clamp(32px,3.6vw,48px)/1.2 var(--serif);letter-spacing:-.035em;max-width:450px;margin:0}
-.beyond-content{display:grid;grid-template-columns:minmax(0,1fr);max-width:600px}
+.beyond-content{display:grid;grid-template-columns:1fr;gap:0}
 .beyond-content h3{font-size:17px;letter-spacing:-.035em;margin:0 0 12px;font-weight:680}
 .beyond-content p{font-size:13px;line-height:1.85;color:#607066;margin:0}
 .beyond-content a{border-bottom:1px solid #829586;color:#314d39;font-weight:680}
