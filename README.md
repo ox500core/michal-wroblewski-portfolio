@@ -38,7 +38,6 @@ Artykuły powstawały z udziałem AI. Moją rolą było definiowanie problemów 
 ## Pozostałe rzeczywiste projekty
 
 - **PulseCMS** — wewnętrzny system generowania stron z kontrolą publikacji, testów i jakości; prywatne repozytorium, publiczny efekt m.in. na BLISK.
-- **CV Engine** — prywatny generator CV oparty na faktach i zasadach niewymyślania kompetencji.
 - **AURA** — udokumentowana wewnętrzna metoda sterowania briefem wizualnym i kontrolą materiałów tworzonych z AI.
 
 Są to projekty o różnym stopniu dojrzałości, **nie referencje komercyjnych klientów**.
