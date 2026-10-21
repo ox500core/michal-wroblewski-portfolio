@@ -193,20 +193,14 @@ a:focus-visible{outline:3px solid #6fa993;outline-offset:5px}
   .contact-actions{max-width:300px}
 }
 @media(max-width:480px){
-  .hero h1{font-size:41px}
-  .hero-project-heading h2{font-size:31px}
-
   .hero h1{font-size:37px;line-height:1.13}
+  .hero-project-heading h2{font-size:31px}
   .eyebrow{font-size:10px}
   .hero-actions .button{width:100%}
   .proofs strong{font-size:24px}
   .proofs span{font-size:11px}
   .capabilities{grid-template-columns:1fr}
   .capability{padding:23px}
-  .diagram{padding:17px 15px}
-  .diagram-heading{font-size:8px}
-  .diagram-node{grid-template-columns:25px 1fr 22px;padding:14px 10px;gap:8px}
-  .diagram-line{margin-left:22px}
   .case-card h3{font-size:27px}
   .case-double-links{gap:14px}
 }
