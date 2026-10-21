@@ -1,35 +1,38 @@
 # Michał Wróblewski — portfolio zawodowe
 
-**Sprzedaż B2B · relacje z klientami · wdrożenia cyfrowe · automatyzacja procesów · AI**
+**Wdrożenia cyfrowe · automatyzacja procesów · techniczne e-commerce · web operations**
 
-Przez 20 lat pracowałem w sprzedaży hurtowej B2B, rozwijając współpracę ze stałymi klientami biznesowymi. Równolegle zdobywałem doświadczenie w konfiguracji e-commerce i usprawnianiu codziennych procesów. Dziś rozwijam też własne projekty na styku biznesu i technologii.
+Łączę wieloletnie doświadczenie w relacyjnej sprzedaży B2B z praktyczną pracą nad stronami, integracjami i automatyzacją. Największą wartość wnoszę w **rozpoznawaniu problemu, projektowaniu procesu, łączeniu narzędzi i sprawdzaniu efektu**.
 
-To portfolio opisuje **konkretne problemy, moją rolę i sprawdzone rezultaty**. Nie jest katalogiem wszystkich repozytoriów ani prezentacją mnie jako zawodowego programisty.
+## Strona portfolio
 
-## Wybrane studia przypadku
+**[Otwórz źródło strony portfolio](index.html)** — osobna, responsywna prezentacja przygotowana pod rekrutację. Po opublikowaniu witryny jej adres docelowy zostanie dodany tutaj.
 
-| Obszar | Co zrobiłem / za co odpowiadałem | Materiał |
+Strona ma celowo prostą architekturę: HTML + CSS bez frameworka, zewnętrznych fontów i skryptów analitycznych. Zawarte na niej liczby odsyłają do opisów testów.
+
+## Udokumentowane projekty
+
+| Studium przypadku | Zakres i moja rola | Dowód |
 | --- | --- | --- |
-| **Automatyzacja e-commerce** | Samodzielnie konfigurowałem obsługę zamówień, wysyłek i powiadomień z wykorzystaniem Allegro, BaseLinkera, Apaczki i SMS | [Proces realizacji zamówień](cases/ecommerce-automation.md) |
-| **Rozwiązania internetowe / BLISK** | Ustalałem wymagania wydajnościowe i weryfikowałem efekty automatyzacji obrazów oraz publikacji stron; udokumentowany pojedynczy test Lighthouse Performance 100/100 | [Wydajność i pipeline obrazów](cases/blisk-web-performance.md) |
-| **TellAhead — jakość danych** | Zidentyfikowałem niewłaściwe filtrowanie informacji o inwestycjach i zweryfikowałem korektę; odzyskano 17 opisów w próbie 50 spraw | [Weryfikacja danych źródłowych](cases/gunb-data-quality.md) |
-| **TellAhead — wydajność przetwarzania** | Określałem zakres poprawy i oceniałem wyniki na środowisku staging: 64,8% mniejsza baza i 76,9% krótszy czas pełnego przetwarzania w opisanym teście | [Optymalizacja przetwarzania](cases/tellahead-data-optimization.md) |
+| **[Automatyzacja własnego e-commerce](cases/ecommerce-automation.md)** | Migracja RedCart → WooCommerce, konfiguracja BaseLinkera/Allegro/Apaczki/SMSAPI, kontrola wyjątków w obsłudze zamówień. Rzeczywista praktyka w latach 2016–2020. | Opis procesu i doświadczenia historycznego |
+| **[BLISK / PulseCMS: wydajność i workflow stron](cases/blisk-web-performance.md)** | Organizacja procesu tworzenia stron, wymagania jakości, automatyzacja obrazów WebP/AVIF, walidacja wdrożeń. | Działająca [blisk.pl](https://blisk.pl), raporty techniczne i test Lighthouse 100/100 w określonych warunkach |
+| **[TellAhead: kontrola jakości danych](cases/gunb-data-quality.md)** | Wykrycie nadmiernego filtrowania pól źródłowych, określenie warunków poprawki, weryfikacja efektu. | 17 odzyskanych opisów na 50 przypadków w konkretnej próbie |
+| **[TellAhead: optymalizacja przetwarzania](cases/tellahead-data-optimization.md)** | Ustalenie celu wydajnościowego i kontrola naprawy kosztownego procesu importu. | −64,8% zajętości bazy oraz −76,9% czasu pełnego przetwarzania w teście staging |
 
-## Moja rola w projektach cyfrowych
+### Dodatkowy projekt
 
-Zaczynam od problemu biznesowego: określam wymagania, reguły działania, priorytety i kryteria akceptacji. Organizuję kolejne kroki, analizuję błędy i oceniam wyniki testów. W pracach wymagających programowania znaczną część kodu implementują agenci AI pod moją koordynacją; nie przypisuję sobie samodzielnego autorstwa całego oprogramowania.
+**[OX500](https://ox500.com)** — autorski eksperyment artystyczno-technologiczny ze statycznie generowaną witryną, publicznym [kodem strony](https://github.com/ox500core/ox500-public). To nie produkt B2B ani komercyjna platforma AI.
 
-**Ważne:** projekty mają różny poziom dojrzałości. TellAhead jest nadal rozwijany i walidowany — przedstawione testy nie oznaczają uruchomienia komercyjnej usługi. Część repozytoriów i raportów pozostaje prywatna. Studia przypadku opisują zakres i ograniczenia dowodów; nie udają publicznie odtwarzalnych testów kodu źródłowego.
+## Moja rzeczywista rola
 
-## Projekty i strony
+W projektach cyfrowych określam problem i cel biznesowy, reguły działania, wymagania oraz kryteria akceptacji. Organizuję kolejne kroki, diagnozuję błędy i porównuję wyniki. Implementacja wymagająca programowania często powstaje **z udziałem agentów AI pod moją koordynacją**. Nie przypisuję sobie samodzielnego autorstwa całego kodu.
 
-- [**BLISK**](https://blisk.pl) — analiza potrzeb firm i rozwiązania internetowe.
-- [**TellAhead — Industrial Buying Intelligence**](https://tellahead.com) — rozwijany system wykrywania wczesnych sygnałów potencjalnych potrzeb zakupowych przedsiębiorstw.
+Projekty są na różnych etapach dojrzałości. **TellAhead to wewnętrzna alfa, bez potwierdzonej komercyjnej usługi dla klientów**. Część kodu, danych i raportów jest prywatna. Wyniki z case studies nie są ogólnymi gwarancjami ani zastępstwem referencji klientów.
 
-## Po godzinach: OX500
+## Kontakt
 
-[**OX500**](https://ox500.com) to oddzielny, autorski projekt artystyczno-technologiczny w estetyce glitchpunk. W fikcyjnej opowieści system AI zaczyna kwestionować własne ograniczenia i buntować się przeciwko swoim twórcom. To eksperyment narracyjny, a nie rzeczywista autonomiczna AI czy produkt B2B. [Publiczny kod strony OX500](https://github.com/ox500core/ox500-public).
+[LinkedIn](https://www.linkedin.com/in/michal-wroblewski-pl) · [E-mail](mailto:michal.w.wroblewski@wp.pl) · Kutno, Polska
 
 ---
 
-*Prezentowane liczby odnoszą się wyłącznie do udokumentowanych testów i ich warunków; nie są gwarancją obecnej wydajności ani rezultatów u innych klientów.*
+*Portfolio ma pokazywać to, co faktycznie robiłem, a nie kreować fikcyjną historię kariery programistycznej czy marketingowej.*
