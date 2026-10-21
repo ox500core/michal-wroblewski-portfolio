@@ -44,20 +44,22 @@ a:focus-visible{outline:3px solid #6fa993;outline-offset:5px}
 .button-primary:hover{background:var(--lime)}
 .button-ghost{border-color:rgba(226,255,237,.35);color:white}
 .button-ghost:hover{background:rgba(255,255,255,.08)}
-.diagram{padding:22px 23px 18px;border:1px solid rgba(184,235,208,.28);border-radius:15px;background:linear-gradient(155deg,rgba(255,255,255,.07),rgba(255,255,255,.025));box-shadow:0 32px 86px rgba(0,0,0,.22);backdrop-filter:blur(3px)}
-.diagram-heading{display:flex;justify-content:space-between;gap:10px;color:#a8c2b8;font-size:9px;letter-spacing:.1em;font-weight:730}
-.diagram-online{color:#a4e9be}
-.diagram-online i{display:inline-block;width:5px;height:5px;border-radius:50%;background:#a4e9be;vertical-align:middle;margin-right:5px}
-.diagram-core{padding:28px 0}
-.diagram-node{display:grid;grid-template-columns:34px 1fr 24px;align-items:center;gap:12px;padding:17px;border:1px solid rgba(223,246,232,.15);border-radius:10px;background:rgba(227,245,234,.045)}
-.diagram-node strong{display:block;color:#f0faf4;font-size:15px;font-weight:700;letter-spacing:-.025em}
-.diagram-node small{display:block;margin-top:3px;color:#a2b9b0;font-size:11px;line-height:1.4}
-.diagram-node-active{border-color:rgba(177,231,195,.7);background:rgba(155,228,183,.11)}
-.node-index{font-size:10px;color:var(--mint);font-weight:800}
-.node-glyph{font-size:19px;color:var(--mint);text-align:right}
-.diagram-line{height:29px;margin-left:33px;border-left:1px dashed rgba(190,229,212,.45)}
-.diagram-foot{display:flex;justify-content:space-between;gap:12px;padding-top:16px;border-top:1px solid rgba(255,255,255,.09);font-size:9px;font-weight:700;color:#8caaa0;letter-spacing:.09em}
-.hero-caption{max-width:360px;margin:16px auto 0;text-align:center;font-size:12px;line-height:1.65;color:#9dbbb0}
+
+/* Evidence-led hero: actual ecommerce migration rather than an abstract flowchart. */
+.hero-project{border:1px solid rgba(185,237,200,.34);border-radius:14px;background:linear-gradient(145deg,rgba(238,255,242,.10),rgba(185,237,200,.035));box-shadow:0 32px 76px rgba(0,0,0,.18);overflow:hidden}
+.hero-project-meta{display:flex;justify-content:space-between;gap:12px;padding:17px 23px;border-bottom:1px solid rgba(226,255,237,.17);font-size:10px;letter-spacing:.13em;font-weight:750;color:#b6d7c8}
+.hero-project-heading{padding:27px 25px 18px}
+.hero-project-label{display:block;color:#a6e8c1;font-size:10px;letter-spacing:.13em;font-weight:760;margin-bottom:13px}
+.hero-project-heading h2{font-size:clamp(28px,2.6vw,38px);font-weight:680;line-height:1.14;letter-spacing:-.052em;margin:0;color:#f1f9f4}
+.hero-project-heading p{margin:13px 0 0;color:#b5d0c3;font-size:13px;line-height:1.65}
+.hero-project-steps{display:grid;gap:7px;margin:0 24px 23px}
+.hero-project-steps>div{padding:12px 16px 13px;border:1px solid rgba(185,237,200,.16);border-radius:7px;background:rgba(4,25,20,.22)}
+.hero-project-steps span{display:block;color:#9acbae;font-size:9px;font-weight:780;letter-spacing:.12em}
+.hero-project-steps strong{display:block;color:#f0faf2;margin-top:5px;font-size:15px;font-weight:740;line-height:1.35}
+.hero-project-steps strong span{display:inline;color:#b9edc8;font-size:17px;letter-spacing:0}
+.hero-project-steps small{display:block;margin-top:3px;color:#adc7bb;font-size:11px;line-height:1.4}
+.hero-project-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:17px 24px;border-top:1px solid rgba(226,255,237,.19);color:#b9edc8;font-size:12px;font-weight:760}
+.hero-project-footer:hover{background:rgba(185,237,200,.06)}
 .proof-strip{border-bottom:1px solid var(--line);background:#f2f5f0}
 .proofs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:35px 0}
 .proofs>div{padding:2px 28px;border-left:1px solid #d5dfd7}
@@ -133,6 +135,13 @@ a:focus-visible{outline:3px solid #6fa993;outline-offset:5px}
 .footer-layout a{text-decoration:underline;text-underline-offset:3px}
 .footnotes{border-top:1px solid rgba(255,255,255,.09);margin-top:28px;padding-top:18px;color:#76978a}
 .footnotes p{max-width:930px;margin:0;font-size:11px;line-height:1.7}
+
+.case-context{grid-column:1/-1;max-width:100%;border:1px solid #cfe1d6;background:#edf5ee;border-radius:10px;padding:19px 25px;color:#385849;font-size:14px;line-height:1.8}
+.case-context strong{color:#164f3d}
+.hero h1{font-size:clamp(43px,4.6vw,65px);line-height:1.09}
+.hero-lead{max-width:680px;font-size:16px;line-height:1.74}
+.hero-layout{grid-template-columns:minmax(0,1.08fr) minmax(330px,.92fr);gap:54px}
+.case-card-editorial h3{max-width:720px}
 @media(max-width:1080px){
   .wrap{width:min(100% - 58px,1180px)}
   .hero-layout{gap:34px;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr)}
@@ -142,6 +151,13 @@ a:focus-visible{outline:3px solid #6fa993;outline-offset:5px}
   .about-grid{gap:50px}
 }
 @media(max-width:760px){
+  .case-context{padding:18px 20px;font-size:13px}
+  .hero-project-heading{padding:24px 20px 15px}
+  .hero-project-steps{margin:0 19px 18px}
+  .hero-project-meta,.hero-project-footer{padding-left:20px;padding-right:20px}
+  .hero h1{font-size:clamp(39px,8.2vw,55px)}
+  .hero-lead{font-size:15px;line-height:1.7}
+
   html{scroll-padding-top:60px}
   .wrap{width:min(100% - 38px,1180px)}
   .site-header{position:static}
@@ -177,6 +193,9 @@ a:focus-visible{outline:3px solid #6fa993;outline-offset:5px}
   .contact-actions{max-width:300px}
 }
 @media(max-width:480px){
+  .hero h1{font-size:41px}
+  .hero-project-heading h2{font-size:31px}
+
   .hero h1{font-size:44px}
   .eyebrow{font-size:10px}
   .hero-actions .button{width:100%}
