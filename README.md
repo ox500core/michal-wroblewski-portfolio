@@ -50,7 +50,7 @@ Projekty są na różnych etapach dojrzałości. **TellAhead to wewnętrzna alfa
 
 ## Kontakt
 
-[LinkedIn](https://www.linkedin.com/in/michal-wroblewski-pl) · [E-mail](mailto:michal.w.wroblewski@wp.pl) · Kutno, Polska
+[LinkedIn](https://www.linkedin.com/in/mwroblewskiblisk) · [E-mail](mailto:michal.w.wroblewski@wp.pl) · Kutno, Polska
 
 ---
 
