@@ -1,34 +1,48 @@
-# BLISK — wydajność stron i automatyzacja przetwarzania obrazów
+# BLISK / PulseCMS — system tworzenia i optymalizacji stron
 
-**Projekt:** własny system budowy stron z wykorzystaniem agentów AI, wdrożony m.in. na [blisk.pl](https://blisk.pl).
+**Rodzaj:** własny projekt internetowy · **strona działająca:** [blisk.pl](https://blisk.pl) · **charakter:** system budowy stron rozwijany z użyciem agentów AI.
 
-## Cel i moje zadania
+## Problem
 
-Ustalałem wymagania szybkości, responsywności, kontroli jakości i kosztów publikacji. Akceptowałem kierunki zmian oraz wymagałem porównania wyników z testami. Kod budowniczego stron, automatyzacji obrazów i cache był implementowany z pomocą agentów AI.
+Chciałem tworzyć strony, których działanie nie zależy od ciężkiego zestawu wtyczek i przypadkowej konfiguracji. Ważne były: szybkość w telefonie, spójność mobilnej i desktopowej wersji, powtarzalna publikacja, zarządzanie obrazami i możliwość kontroli zmian.
 
-## Zweryfikowana wydajność
+## Jak zorganizowałem rozwiązanie
 
-W udokumentowanym pomiarze laboratoryjnym Lighthouse 13.4.0 z 13 lipca 2026 r.:
+- Określałem wymagania biznesowe strony, strukturę informacji, zasady publikacji i kryteria jakości.
+- Projektowałem przepływ pracy: **dane i treści → generator → optymalizacja zasobów → build → testy → publikacja**.
+- Wymagałem automatycznego tworzenia responsywnych formatów obrazów **WebP / AVIF** i ograniczenia kosztów ich ponownego generowania.
+- Testowałem działanie strony i wyniki Lighthouse; identyfikowałem problemy do poprawy i weryfikowałem rezultat kolejnych zmian.
+- Korzystałem z **GitHub, testów oraz wdrożeń na Vercel** do organizacji i weryfikacji pracy.
+
+**Moja rola:** projektowałem założenia, zakres i reguły jakości, analizowałem błędy, zatwierdzałem priorytety oraz oceniałem wyniki testów. **Znaczną część implementacji kodu tworzyły agenty AI** pod moją koordynacją — nie opisuję jej jako samodzielnie napisanego przeze mnie frameworka.
+
+## Udokumentowane wyniki
+
+### Performance w pojedynczym teście Lighthouse
+
+**Lighthouse 13.4.0 · 13 lipca 2026 r.**
 
 | Miernik | Mobile | Desktop |
-|---|---:|---:|
+| --- | ---: | ---: |
 | Performance | **100/100** | **100/100** |
 | LCP | 0,9 s | 0,4 s |
 | TBT | 0 ms | 0 ms |
 | CLS | 0 | 0 |
 
-Accessibility i Best Practices również otrzymały 100 punktów w tym audycie. Wynik SEO był wtedy ograniczony świadomym ustawieniem `noindex`; nie należy więc twierdzić, że wszystkie kategorie zawsze osiągały 100.
+Accessibility i Best Practices otrzymały również 100 punktów. W tej próbie SEO był ograniczony świadomym `noindex` — nie twierdzę, że wszystkie kategorie i wszystkie uruchomienia zawsze mają 100.
 
-## Automatyzacja mediów
+### Automatyzacja wariantów obrazów
 
-System generuje responsywne warianty **WebP/AVIF** podczas budowania witryny. Warianty są buforowane według identyfikatora zawartości i parametrów kodowania.
+- W udokumentowanej próbie cache zapisano **214 unikalnych wariantów** obrazów.
+- Przy kolejnym buildzie bez zmiany źródeł obrazów **0 z 80** wariantów zostało ponownie wygenerowanych.
+- Wprowadzono dodatkową ochronę przed duplikacją cache oraz limit **256 MiB**, z testami regresji.
 
-W udokumentowanej próbie cache:
+## Co ten projekt pokazuje pracodawcy
 
-- zapisano **214 unikalnych wariantów**;
-- przy kolejnym buildzie bez zmian obrazów zapisano **0 z 80 wariantów** na nowo;
-- mechanizm został rozszerzony o eliminację podwójnego cache i limit **256 MiB** wraz z testami regresji.
+To przykład analizy wymagań, organizacji technicznego workflow, kontroli jakości, myślenia o wydajności i pracy z narzędziami AI. Nie jest to dowód, że samodzielnie napisałem cały kod źródłowy ani że obsługiwałem zewnętrznych płacących klientów BLISK.
 
-**Granice dowodu:** są to wyniki konkretnych audytów i testów, a nie gwarancja obecnej wydajności strony ani stałego wyniku 100.
+## Dowody i ograniczenia
 
-**Wewnętrzne źródła weryfikacji:** wewnętrzne repozytorium systemu stron, PR **#25** (Lighthouse), **#95** (AVIF/WebP cache), **#111** (usunięcie duplikacji cache), **#112** (ograniczenie cache). Wszystkie cztery były scalone przy przygotowaniu opisu.
+- [Działająca witryna BLISK](https://blisk.pl)
+- Wewnętrzne repozytorium PulseCMS: scalone PR **#25** (Lighthouse), **#95** (cache AVIF/WebP), **#111** (eliminacja duplikacji), **#112** (limit cache).
+- Wartości pochodzą z konkretnych audytów i przebiegów testowych, **nie stanowią SLA** ani gwarancji bieżących parametrów serwisu.
